@@ -1,0 +1,13 @@
+package dmmf
+
+sourcedir = "src"
+executable = DMMF
+main = Main
+depends = effects
+
+modules
+  = Common.Prelude
+  , Common.App
+  , OrderTaking.Domain
+  , OrderTaking.Workflow
+  , Main

@@ -1,0 +1,4 @@
+Feature request: annotate variables with simple types.
+
+  (orderLines, []) -- : (List (Result ValidatedOrderLine String))
+    <- map partitionResults

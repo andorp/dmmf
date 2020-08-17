@@ -1,0 +1,7 @@
+Already defined name
+
+data Name : Type where
+
+data Name : Type where
+
+should indicate where are the previous definitions.

@@ -1,0 +1,15 @@
+name reporting is missleading when rendering error message for the same type/name
+
+src/OrderTaking/Workflow.idr:315:5--315:16:While processing right hand side of toValidateOrderLine at src/OrderTaking/Workflow.idr:303:1--320:1:
+When unifying ProductCode and ProductCode
+Mismatch between:
+        ProductCode
+and
+        ProductCode
+at:
+315         productCode
+            ^^^^^^^^^^^
+
+Possible root cause:
+The ProductCode was defined in different modules, both were non-exported names.
+

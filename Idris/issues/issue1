@@ -1,0 +1,17 @@
+Name ambiguity check for private names.
+
+module1.idr:
+
+data Name : Type where
+record Record where
+  constructor MkRecord
+  Name : field
+
+module2.idr:
+
+import module1
+
+function : Int -> Result Name Int
+function = ?
+-- produces ambigous name instances
+
